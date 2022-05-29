@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Grape+Nuts&family=M+PLUS+Rounded+1c:wght@300&display=swap');
+
+        body {
+
+            font-family: 'M PLUS Rounded 1c', sans-serif;
+        }
+
+        input[type=text],
+        select,
+        textarea {
+            width: 100%;
+            /* Full width */
+            padding: 12px;
+            /* Some padding */
+            border: 1px solid #ccc;
+            /* Gray border */
+            border-radius: 4px;
+            /* Rounded borders */
+            box-sizing: border-box;
+            /* Make sure that padding and width stays in place */
+            margin-top: 6px;
+            /* Add a top margin */
+            margin-bottom: 16px;
+            /* Bottom margin */
+            resize: vertical
+                /* Allow the user to vertically resize the textarea (not horizontally) */
+        }
+
+        h1 {
+            text-align: center;
+            border: 2px dotted #28d6d1;
+        }
+
+        input[type=number],
+        select,
+        textarea {
+            width: 100%;
+            /* Full width */
+            padding: 12px;
+            /* Some padding */
+            border: 1px solid #ccc;
+            /* Gray border */
+            border-radius: 4px;
+            /* Rounded borders */
+            box-sizing: border-box;
+            /* Make sure that padding and width stays in place */
+            margin-top: 6px;
+            /* Add a top margin */
+            margin-bottom: 16px;
+            /* Bottom margin */
+            resize: vertical
+                /* Allow the user to vertically resize the textarea (not horizontally) */
+        }
+
+        input[type=radio],
+        select,
+        textarea {
+            width: 100%;
+            /* Full width */
+            padding: 12px;
+            /* Some padding */
+            /* Gray border */
+            /* Rounded borders */
+            /* Make sure that padding and width stays in place */
+            /* Add a top margin */
+            /* Bottom margin */
+            resize: vertical
+        }
+        a{
+           border: 2px solid #28d6d1;
+            color: #030404;
+            padding: 2px 3px;
+            text-decoration: none;
+            font-weight: bolder;
+        }
+
+
+        /* Style the submit button with a specific background color etc */
+        input[type=submit] {
+            background-color: #28d6d1;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        /* When moving the mouse over the submit button, add a darker green color */
+        input[type=submit]:hover {
+            text-decoration: underline;
+        }
+
+        /* Add a background color and some padding around the form */
+        .container {
+            border-radius: 5px;
+            background-color: #fff;
+            padding: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+         <a href="index.html">HOME</a><h1>CONTACT FORM</h1>
+        <form action="action_page.php">
+
+            <label for="fname">First Name</label>
+            <input type="text" id="fname" name="firstname" placeholder="Your name.." required>
+
+            <label for="lname">Last Name</label>
+            <input type="text" id="lname" name="lastname" placeholder="Your last name.." required>
+
+            <label for="phone">Phone No.</label>
+            <input type="number" id="phone" name="phone" placeholder="Your phone number.." required>
+
+            <label for="country">Address</label>
+            <input type="text" id="country" name="country" placeholder="Your Address..">
+
+            <label for="gender"> Select you gender</label>
+            <select name="gender">
+                <option value="none" selected>Gender</option>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="other">other</option>
+            </select>
+
+
+            <label for="subject">Subject</label>
+            <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+
+            
+            <br><br>
+
+            <input type="submit" value="Submit">
+
+        </form>
+    </div>
+
+</body>
+
+</html>
